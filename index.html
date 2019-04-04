@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Catalogue produit</title>
+    <link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/base_h5bp.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/partie1.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/partie2.css" type="text/css" media="screen">
+    <script src="src/partie2.js"></script>
+    <script src="src/main.js"></script>
+    <script src="data/produit.js"></script>
+</head>
+<header class="header"> Tp Javascript</header>
+
+<body>
+    <main>
+        <section class="action">
+            <select name="mode">
+                <option value="liste">Liste</option>
+                <option value="grille" selected>Grille</option>
+            </select>
+
+            <select name="nombreParPage">
+                <option value="12" selected>12 par page</option>
+                <option value="24">24 par page</option>
+                <option value="36">36 par page</option>
+                <option value="0">Tous</option>
+            </select>
+            <p> <button class="btnAffiche">afficher panier</button><span class="nombreArticle"></span></p>
+
+
+        </section>  
+        <section class="catalogue grille clearfix">
+            <section class="listeProduit">
+
+            </section>
+            <section class="pager">
+                <ul>
+
+                </ul>
+            </section>
+        </section>
+    </main>
+
+    <section class="contenuPanier ">
+        <section class="zonePanier">
+            <header>
+                <h1>Mon panier d'achat</h1><span class="fermeture">X</span>
+            </header>
+            <section class="produitPanier">
+
+            </section>
+            <button class="vider">Vider le panier</button>
+            <section class="total"><span>Prix total : </span><span class="prix"></span></section>
+        </section>
+    </section>
+    <footer>copyright:Reda Jeffal</footer>
+</body>
+
+</html>
